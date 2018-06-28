@@ -22,7 +22,7 @@
     "report-coverage": "cat ./coverage/lcov.info | codecov",
     "watch:test": "yarn test -- -w",
     "test": "mocha src/index.test.js --compilers js:babel-register",
-    "cover": "nyc yarn t",
+    "cover": "nyc yarn test",
     "prebuild": "rimraf dist",
     "build": "yarn build:main && yarn build:umd && yarn build:umd.min",
     "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
