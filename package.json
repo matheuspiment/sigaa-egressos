@@ -1,0 +1,71 @@
+{
+  "name": "sigaa-egressos",
+  "version": "0.0.0-development",
+  "description": "A simple lib to put and get messagages from a emitter broker",
+  "main": "dist/index.js",
+  "repository": "https://github.com/matheuspiment/sigaa-egressos",
+  "author": "Matheus Pimenta <matheuspiment@hotmail.com> (https://github.com/matheuspiment)",
+  "contributors": [
+    "Antonio Arlis <antonio.silva27@outlook.com> (https://github.com/antoni-s)",
+    "Beatriz Nogueira <beatrizncsilveira@gmail.com> (https://github.com/BeatrizN)",
+    "Keslley Lima <keslleyls@outlook.com> (https://github.com/keslleylima)"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "commit": "git-cz",
+    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "watch:test": "yarn test -- -w",
+    "test": "mocha src/index.test.js --compilers js:babel-register",
+    "cover": "nyc yarn t",
+    "prebuild": "rimraf dist",
+    "build": "yarn build:main && yarn build:umd && yarn build:umd.min",
+    "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
+    "build:umd": "webpack --output-filename index.umd.js",
+    "build:umd.min": "webpack --output-filename index.umd.min.js -p",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-loader": "6.2.4",
+    "babel-preset-env": "1.7.0",
+    "babel-register": "6.26.0",
+    "chai": "4.1.2",
+    "codecov": "3.0.2",
+    "commitizen": "2.10.1",
+    "cz-conventional-changelog": "2.1.0",
+    "ghooks": "2.0.4",
+    "mocha": "5.2.0",
+    "nyc": "12.0.2",
+    "rimraf": "2.6.2",
+    "semantic-release": "^15.6.0",
+    "travis-deploy-once": "5.0.0",
+    "webpack": "1.13.1"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "yarn cover && npm run check-coverage"
+    },
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  }
+}
