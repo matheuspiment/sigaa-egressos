@@ -64,6 +64,15 @@ const connect = () => {
 };
 
 /**
+ * Disconnects from the emitter broker.
+ * @function
+ */
+const disconnect = () => {
+  client.disconnect();
+  client = undefined;
+};
+
+/**
  * Subscribes to the channel.
  * @function
  * @param {number} [last] Define how many stored messages you want to retrieve.
@@ -80,6 +89,19 @@ const subscribe = (last) => {
     key: EMITTER_CHANNEL_KEY,
     channel: EMITTER_CHANNEL,
     last: last === undefined ? 0 : last,
+  });
+};
+
+/**
+ * Unsubscribes to the channel.
+ * @function
+ */
+const unsubscribe = () => {
+  hasClient();
+
+  client.unsubscribe({
+    key: EMITTER_CHANNEL_KEY,
+    channel: EMITTER_CHANNEL,
   });
 };
 
@@ -132,7 +154,9 @@ const onMessage = (callback) => {
 
 export default {
   connect,
+  disconnect,
   subscribe,
+  unsubscribe,
   publish,
   onMessage,
 };
