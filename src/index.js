@@ -147,8 +147,8 @@ const onMessage = (callback) => {
 
   hasClient();
 
-  client.on('message', (msg) => {
-    callback(msg.asObject());
+  client.on('message', (message) => {
+    callback(message.asObject());
   });
 };
 
