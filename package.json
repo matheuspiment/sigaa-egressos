@@ -1,0 +1,53 @@
+{
+  "name": "sigaa-egressos",
+  "version": "0.0.0-development",
+  "description": "A simple lib to put and get messagages from a emitter broker",
+  "main": "dist/index.js",
+  "repository": "https://github.com/matheuspiment/sigaa-egressos",
+  "author": "Matheus Pimenta <matheuspiment@hotmail.com> (https://github.com/matheuspiment)",
+  "contributors": [
+    "Antonio Arlis <antonio.silva27@outlook.com> (https://github.com/antoni-s)",
+    "Beatriz Nogueira <beatrizncsilveira@gmail.com> (https://github.com/BeatrizN)",
+    "Keslley Lima <keslleyls@outlook.com> (https://github.com/keslleylima)"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "commit": "git-cz",
+    "test": "echo \"No test specified\" && exit 0",
+    "prebuild": "rimraf dist",
+    "build": "yarn build:main",
+    "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "dependencies": {
+    "emitter-io": "1.25.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-eslint": "8.2.5",
+    "babel-plugin-module-resolver": "3.1.1",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "commitizen": "2.10.1",
+    "cz-conventional-changelog": "2.1.0",
+    "eslint": "5.0.1",
+    "eslint-config-airbnb-base": "13.0.0",
+    "eslint-import-resolver-babel-module": "4.0.0",
+    "eslint-plugin-import": "2.13.0",
+    "rimraf": "2.6.2",
+    "semantic-release": "^15.6.0",
+    "travis-deploy-once": "5.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
+}
