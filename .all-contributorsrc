@@ -52,6 +52,15 @@
         "doc",
         "ideas"
       ]
+    },
+    {
+      "login": "kyriosdata",
+      "name": "Fábio Nogueira de Lucena",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1735792?v=4",
+      "profile": "http://www.inf.ufg.br/~fabio",
+      "contributions": [
+        "ideas"
+      ]
     }
   ]
 }
