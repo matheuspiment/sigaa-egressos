@@ -117,18 +117,18 @@ Desescreve do canal.
 
 Publica a mensagem no canal.
 
-* `message` - objeto | requerido - Um objeto JSON com [essa estrutura](#estrutura-da-mensagem).
+* `message` - objeto | requerido - Um objeto javascript com [essa estrutura](#estrutura-da-mensagem).
 * `ttl` - número | opicional - É o tempo de vida da mensagem, em segundos.
 
 ### onMessage(callback)
 
 Definir a função callback para os pacotes de mensagens recebidos.
 
-* `callback` - function | requerido - Função callback para os pacotes de mensagens recebidos.
+* `callback(message)` - function | requerido - Função callback para os pacotes de mensagens recebidos. O argumento `message` segue [essa estrutura](#estrutura-da-mensagem).
 
 ## Estrutura da Mensagem
 
-As mensagens publicadas e recebidas seguem o modelo abaixo, onde essas chaves são as requeridas, podendo haver outras.
+As mensagens publicadas e recebidas são no formato seguem o modelo/esquema abaixo, onde essas chaves são as requeridas, podendo haver outras.
 
 ```javascript
 {
