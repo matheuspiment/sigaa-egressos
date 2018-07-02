@@ -10,8 +10,8 @@
 
 Este projeto tem como objetivo propor uma solução de integração entre o SIGAA-UFG com aplicação SempreUFG, esta destinada ao egressos da universidade, onde por troca de mensagem  a mesma receberia as informações do SIGAA acerca dos alunos em egresso. :mailbox_with_mail:
 
-* [Especificação da Proposta](#especificacao-da-proposta)
-* [Instalação](#instalacao)
+* [Especificação da Proposta](#especificação-da-proposta)
+* [Instalação](#instalação)
 * [Exemplo](#exemplo)
 * [API](#api)
 * [Estrutura da Mensagem](#estrutura-da-mensagem)
