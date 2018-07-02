@@ -91,7 +91,7 @@ sigaaEgressos.publish({
 * [connect()](#connect)
 * [subscribe()](#subscribelast)
 * [publish()](#publishmessage-ttl)
-* [onMessage()](#onMessagecallback)
+* [onMessage()](#onmessagecallback)
 
 ### connect()
 
@@ -130,6 +130,8 @@ As mensagens publicadas e recebidas seguem o modelo abaixo, onde essas chaves s√
 ```
 
 ## Equipe
+
+Mais detalhes sobre [emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
