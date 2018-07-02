@@ -17,6 +17,7 @@
     "README.md"
   ],
   "scripts": {
+    "add-contributor": "kcd-scripts contributors add",
     "commit": "git-cz",
     "test": "echo \"No test specified\" && exit 0",
     "prebuild": "rimraf dist",
@@ -41,6 +42,7 @@
     "eslint-config-airbnb-base": "13.0.0",
     "eslint-import-resolver-babel-module": "4.0.0",
     "eslint-plugin-import": "2.13.0",
+    "kcd-scripts": "0.39.2",
     "rimraf": "2.6.2",
     "semantic-release": "^15.6.0",
     "travis-deploy-once": "5.0.0"

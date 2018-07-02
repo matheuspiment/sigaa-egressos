@@ -1,4 +1,5 @@
 # SIGAA-EGRESSOS
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 
 [![travis build](https://img.shields.io/travis/matheuspiment/sigaa-egressos.svg)](https://travis-ci.org/matheuspiment/sigaa-egressos)
 [![version](https://img.shields.io/npm/v/sigaa-egressos.svg)](https://www.npmjs.com/package/sigaa-egressos)
@@ -130,9 +131,8 @@ As mensagens publicadas e recebidas seguem o modelo abaixo, onde essas chaves s�
 
 ## Equipe
 
-| Nome | E-mail | Git |
-|------|--------|-----|
-| Antonio Arlis Santos da Silva | antonio.silva27@outlook.com | [@antoni-s](https://github.com/antoni-s) |
-| Beatriz Nogueira Carvalho da Silveira | beatrizncsilveira@gmail.com | [@BeatrizN](https://github.com/BeatrizN) |
-| Keslley Lima da Silva | keslleyls@outlook.com | [@keslleylima](https://github.com/keslleylima) |
-| Matheus Ribeiro Pimenta Nunes | matheuspiment@hotmail.com | [@matheuspiment](https://github.com/matheuspiment) |
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+| [<img src="https://avatars3.githubusercontent.com/u/14007153?v=4" width="100px;"/><br /><sub><b>Matheus Pimenta</b></sub>](https://github.com/matheuspiment)<br />[💻](https://github.com/matheuspiment/sigaa-egressos/commits?author=matheuspiment "Code") [📖](https://github.com/matheuspiment/sigaa-egressos/commits?author=matheuspiment "Documentation") [💡](#example-matheuspiment "Examples") [🚇](#infra-matheuspiment "Infrastructure (Hosting, Build-Tools, etc)") [📦](#platform-matheuspiment "Packaging/porting to new platform") [🤔](#ideas-matheuspiment "Ideas, Planning, & Feedback") | [<img src="https://avatars0.githubusercontent.com/u/14222873?v=4" width="100px;"/><br /><sub><b>Beatriz Nogueira</b></sub>](https://github.com/BeatrizN)<br />[📖](https://github.com/matheuspiment/sigaa-egressos/commits?author=BeatrizN "Documentation") [🤔](#ideas-BeatrizN "Ideas, Planning, & Feedback") | [<img src="https://avatars1.githubusercontent.com/u/13911633?v=4" width="100px;"/><br /><sub><b>Antonio Silva</b></sub>](https://github.com/antoni-s)<br />[📖](https://github.com/matheuspiment/sigaa-egressos/commits?author=antoni-s "Documentation") [🤔](#ideas-antoni-s "Ideas, Planning, & Feedback") | [<img src="https://avatars0.githubusercontent.com/u/13686670?v=4" width="100px;"/><br /><sub><b>Keslley L.</b></sub>](https://github.com/keslleylima)<br />[📖](https://github.com/matheuspiment/sigaa-egressos/commits?author=keslleylima "Documentation") [🤔](#ideas-keslleylima "Ideas, Planning, & Feedback") |
+| :---: | :---: | :---: | :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->

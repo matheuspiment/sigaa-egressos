@@ -1,0 +1,57 @@
+{
+  "projectName": "sigaa-egressos",
+  "projectOwner": "matheuspiment",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "matheuspiment",
+      "name": "Matheus Pimenta",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/14007153?v=4",
+      "profile": "https://github.com/matheuspiment",
+      "contributions": [
+        "code",
+        "doc",
+        "example",
+        "infra",
+        "platform",
+        "ideas"
+      ]
+    },
+    {
+      "login": "BeatrizN",
+      "name": "Beatriz Nogueira",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/14222873?v=4",
+      "profile": "https://github.com/BeatrizN",
+      "contributions": [
+        "doc",
+        "ideas"
+      ]
+    },
+    {
+      "login": "antoni-s",
+      "name": "Antonio Silva",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/13911633?v=4",
+      "profile": "https://github.com/antoni-s",
+      "contributions": [
+        "doc",
+        "ideas"
+      ]
+    },
+    {
+      "login": "keslleylima",
+      "name": "Keslley L.",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/13686670?v=4",
+      "profile": "https://github.com/keslleylima",
+      "contributions": [
+        "doc",
+        "ideas"
+      ]
+    }
+  ]
+}
