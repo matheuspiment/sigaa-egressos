@@ -6,6 +6,8 @@
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/matheuspiment/sigaa-egressos)
 [![MIT License](https://img.shields.io/github/license/matheuspiment/sigaa-egressos.svg)](https://opensource.org/licenses/MIT)
 
+> Esta é uma blibioteca para fins acadêmicos e não indicada para uso em produção.
+
 Este projeto tem como objetivo propor uma solução de integração entre o SIGAA-UFG com aplicação SempreUFG, esta destinada ao egressos da universidade, onde por troca de mensagem  a mesma receberia as informações do SIGAA acerca dos alunos em egresso. :mailbox_with_mail:
 
 * [Especificação da Proposta](#especificacao-da-proposta)
