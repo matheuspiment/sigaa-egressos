@@ -38,14 +38,15 @@ Conforme apresentado na figura 1 a comunicação entre o SIGAA-UFG e EMITTER, SE
 
 ### Ferramentas/Tecnologias
 
-A "simplicidade" foi o fator determinante nas escolhas técnicas, bem como a familiaridade dos integrantes envolvidos.
+A "simplicidade" foi o fator determinante nas escolhas técnicas, bem como a familiaridade dos integrantes envolvidos. O objetivo principal foi a adoção de ferramentas/tecnologias com um grande ecossistema/comunidade e que auxiliassem na ornanização dos artefatos e do workflow de desenvolvimento do projeto.
 
+* Comunicação - Informal (por meio de reuniões e conversas)
 * Linguagem/Plataforma - [NodeJS](https://nodejs.org/en/)
 * Estilo de Código - [ESLint](https://eslint.org/) e [EditorConfig](https://editorconfig.org/)
 * Versionamento - [GitHub](https://github.com/) e [Commitizen](https://github.com/commitizen)
 * Broker/Canal - [Emitter](https://emitter.io/)
 * CI - [Travis CI](https://travis-ci.org/)
-* Entrega/Pacote - [NPM](https://www.npmjs.com/)
+* Entrega/Pacote - [NPM](https://www.npmjs.com/) e [semantic-release](https://github.com/semantic-release/semantic-release)
 
 ## Instalação
 
