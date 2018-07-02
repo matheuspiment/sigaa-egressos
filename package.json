@@ -18,54 +18,36 @@
   ],
   "scripts": {
     "commit": "git-cz",
-    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
-    "report-coverage": "cat ./coverage/lcov.info | codecov",
-    "watch:test": "yarn test -- -w",
-    "test": "mocha src/index.test.js --compilers js:babel-register",
-    "cover": "nyc yarn test",
+    "test": "echo \"No test specified\" && exit 0",
     "prebuild": "rimraf dist",
-    "build": "yarn build:main && yarn build:umd && yarn build:umd.min",
+    "build": "yarn build:main",
     "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
-    "build:umd": "webpack --output-filename index.umd.js",
-    "build:umd.min": "webpack --output-filename index.umd.min.js -p",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
+  "dependencies": {
+    "emitter-io": "1.25.0"
+  },
   "devDependencies": {
     "babel-cli": "6.26.0",
-    "babel-loader": "6.2.4",
+    "babel-eslint": "8.2.5",
+    "babel-plugin-module-resolver": "3.1.1",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "1.7.0",
-    "babel-register": "6.26.0",
-    "chai": "4.1.2",
-    "codecov": "3.0.2",
     "commitizen": "2.10.1",
     "cz-conventional-changelog": "2.1.0",
-    "ghooks": "2.0.4",
-    "mocha": "5.2.0",
-    "nyc": "12.0.2",
+    "eslint": "5.0.1",
+    "eslint-config-airbnb-base": "13.0.0",
+    "eslint-import-resolver-babel-module": "4.0.0",
+    "eslint-plugin-import": "2.13.0",
     "rimraf": "2.6.2",
     "semantic-release": "^15.6.0",
-    "travis-deploy-once": "5.0.0",
-    "webpack": "1.13.1"
+    "travis-deploy-once": "5.0.0"
   },
   "config": {
-    "ghooks": {
-      "pre-commit": "yarn cover && npm run check-coverage"
-    },
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }
-  },
-  "babel": {
-    "presets": [
-      [
-        "env",
-        {
-          "targets": {
-            "node": "current"
-          }
-        }
-      ]
-    ]
   }
 }
