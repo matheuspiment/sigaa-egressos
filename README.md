@@ -89,7 +89,9 @@ sigaaEgressos.publish({
 ## API
 
 * [connect()](#connect)
+* [disconnect()](#disconnect)
 * [subscribe()](#subscribelast)
+* [unsubscribe()](#unsubscribe)
 * [publish()](#publishmessage-ttl)
 * [onMessage()](#onmessagecallback)
 
@@ -97,11 +99,19 @@ sigaaEgressos.publish({
 
 Conecta no broker emitter.
 
+### disconnect()
+
+Desconecta do broker.
+
 ### subscribe(last)
 
 Inscreve-se no canal.
 
 * `last` - número | opicional - Defini quantas mensagens armazenadas você deseja recuperar.
+
+### unsubscribe()
+
+Desescreve do canal.
 
 ### publish(message, ttl)
 
