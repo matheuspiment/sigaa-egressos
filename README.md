@@ -129,7 +129,9 @@ Definir a função callback para os pacotes de mensagens recebidos.
 
 ## Estrutura da Mensagem
 
-As mensagens publicadas e recebidas são no formato seguem o modelo/esquema abaixo, onde essas chaves são as requeridas, podendo haver outras.
+As mensagens publicadas e recebidas seguem o modelo/esquema abaixo, onde essas chaves são as requeridas, podendo haver outras.
+
+> Outras chaves e seus respectivos valores não são verificados para biblioteca.
 
 ```javascript
 {
