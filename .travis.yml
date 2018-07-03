@@ -8,9 +8,11 @@ node_js:
   - '9'
   - '8'
 script:
-  - yarn test
+  - yarn cover
+  - yarn check-coverage
   - yarn build
 after_success:
+  - yarn report-coverage
   - yarn travis-deploy-once "yarn semantic-release"
 branches:
   only:

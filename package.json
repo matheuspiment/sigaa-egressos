@@ -19,7 +19,10 @@
   "scripts": {
     "add-contributor": "kcd-scripts contributors add",
     "commit": "git-cz",
-    "test": "jest src/index.test.js",
+    "test": "jest --coverage src/__tests__/**.test.js",
+    "check-coverage": "nyc check-coverage --statements 75 --branches 75 --functions 75 --lines 75",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "cover": "nyc yarn test",
     "prebuild": "rimraf dist",
     "build": "yarn build:main",
     "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
@@ -36,6 +39,7 @@
     "babel-plugin-transform-class-properties": "6.24.1",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "1.7.0",
+    "codecov": "3.0.2",
     "commitizen": "2.10.1",
     "cz-conventional-changelog": "2.1.0",
     "eslint": "5.0.1",
@@ -44,6 +48,7 @@
     "eslint-plugin-import": "2.13.0",
     "jest": "23.2.0",
     "kcd-scripts": "0.39.2",
+    "nyc": "12.0.2",
     "rimraf": "2.6.2",
     "semantic-release": "^15.6.0",
     "travis-deploy-once": "5.0.0"
