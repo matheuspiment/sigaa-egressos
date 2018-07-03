@@ -1,6 +1,7 @@
 # SIGAA-EGRESSOS
 
 [![travis build](https://img.shields.io/travis/matheuspiment/sigaa-egressos.svg)](https://travis-ci.org/matheuspiment/sigaa-egressos)
+[![codecov coverage](https://img.shields.io/codecov/c/github/matheuspiment/sigaa-egressos.svg)](https://codecov.io/gh/matheuspiment/sigaa-egressos)
 [![version](https://img.shields.io/npm/v/sigaa-egressos.svg)](https://www.npmjs.com/package/sigaa-egressos)
 [![downloads](https://img.shields.io/npm/dw/sigaa-egressos.svg)](https://www.npmjs.com/package/sigaa-egressos)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/matheuspiment/sigaa-egressos)
