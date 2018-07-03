@@ -8,6 +8,7 @@ node_js:
   - '9'
   - '8'
 script:
+  - yarn test
   - yarn build
 after_success:
   - yarn travis-deploy-once "yarn semantic-release"
