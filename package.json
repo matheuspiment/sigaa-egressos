@@ -19,7 +19,7 @@
   "scripts": {
     "add-contributor": "kcd-scripts contributors add",
     "commit": "git-cz",
-    "test": "echo \"No test specified\" && exit 0",
+    "test": "jest src/index.test.js",
     "prebuild": "rimraf dist",
     "build": "yarn build:main",
     "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
@@ -42,6 +42,7 @@
     "eslint-config-airbnb-base": "13.0.0",
     "eslint-import-resolver-babel-module": "4.0.0",
     "eslint-plugin-import": "2.13.0",
+    "jest": "23.2.0",
     "kcd-scripts": "0.39.2",
     "rimraf": "2.6.2",
     "semantic-release": "^15.6.0",
