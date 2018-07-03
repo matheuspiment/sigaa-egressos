@@ -19,7 +19,7 @@
   "scripts": {
     "add-contributor": "kcd-scripts contributors add",
     "commit": "git-cz",
-    "test": "jest --coverage src/__tests__/**.test.js",
+    "test": "jest --coverage test/**.test.js",
     "check-coverage": "nyc check-coverage --statements 75 --branches 75 --functions 75 --lines 75",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
     "cover": "nyc yarn test",
