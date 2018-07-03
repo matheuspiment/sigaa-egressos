@@ -2,15 +2,22 @@ language: node_js
 cache:
   directories:
     - ~/.yarn
+    - '$HOME/.sonar/cache'
 notifications:
   email: false
 node_js:
   - '9'
   - '8'
+addons:
+  sonarcloud:
+    organization: "matheuspiment-github"
+    token:
+      secure: $SONAR_TOKEN
 script:
   - yarn cover
   - yarn check-coverage
   - yarn build
+  - sonar-scanner
 after_success:
   - yarn report-coverage
   - yarn travis-deploy-once "yarn semantic-release"
