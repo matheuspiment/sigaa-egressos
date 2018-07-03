@@ -35,8 +35,9 @@ const hasClient = () => {
  * @throws {Error} The message must be an object.
  * @throws {Error} The message does not have all the expected keys.
  * @throws {Error} The message contains invalid keys.
+ * @throws {Error} The value for the ${key} must be a number|string.
  */
-const checkMessage = (message) => {
+export const checkMessage = (message) => {
   if (typeof message !== 'object') {
     throw new Error('The message must be an object');
   }
@@ -52,6 +53,20 @@ const checkMessage = (message) => {
   if (unMatchedKeys.length > 0) {
     throw new Error(`The message contains invalid keys:\n ${unMatchedKeys}`);
   }
+
+  let value;
+
+  MESSAGE_KEYS.forEach((key) => {
+    value = message[key];
+
+    if (key !== 'id') {
+      if (typeof value !== 'string') {
+        throw new Error(`The value for the ${key} must be a string`);
+      }
+    } else if (typeof value !== 'number') {
+      throw new Error('The value for the id must be a number');
+    }
+  });
 };
 
 /**
