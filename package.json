@@ -30,7 +30,7 @@
     "travis-deploy-once": "travis-deploy-once"
   },
   "dependencies": {
-    "emitter-io": "1.25.0"
+    "emitter-io": "1.39.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
