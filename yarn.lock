@@ -2606,9 +2606,10 @@ elliptic@^6.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
 
-emitter-io@1.25.0:
-  version "1.25.0"
-  resolved "https://registry.yarnpkg.com/emitter-io/-/emitter-io-1.25.0.tgz#c29d48c7e41d648a3d1e35dd2e1dc890d7e070a1"
+emitter-io@1.39.0:
+  version "1.39.0"
+  resolved "https://registry.npmjs.org/emitter-io/-/emitter-io-1.39.0.tgz#af4c27e06ab380da1c63b82163c45b66e15dfc12"
+  integrity sha512-Z97DyB6gAXqXnpyECNpwqUHjYrEt9wyiBeAXONluAY7zIm+jXlV98OOM4eOhr3Bwu7Ts3SfhcmxqdHUrj4tkSQ==
   dependencies:
     mqtt ">=1.7.4 <=1.11.2"
 

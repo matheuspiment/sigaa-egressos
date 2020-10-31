@@ -1,6 +1,8 @@
 /**
  * Checks for an established connection.
+ *
  * @function
+ *
  * @throws {Error} Connection does not exists.
  */
 export const hasClient = (client) => {
@@ -11,22 +13,26 @@ export const hasClient = (client) => {
 
 /**
  * The allowed keys on the message object.
+ *
  * @constant {array}
  */
 const MESSAGE_KEYS = ['id', 'title', 'type', 'description'];
 
 /**
  * Checks if the message is valid.
+ *
  * @function
+ *
  * @param {!object} message A javascript object
- * @throws {Error} The message must be an object.
+ *
+ * @throws {TypeError} The message must be an object.
  * @throws {Error} The message does not have all the expected keys.
  * @throws {Error} The message contains invalid keys.
  * @throws {Error} The value for the ${key} must be a number|string.
  */
 export const checkMessage = (message) => {
   if (typeof message !== 'object') {
-    throw new Error('The message must be an object');
+    throw new TypeError('The message must be an object');
   }
 
   const messageKeys = Object.keys(message);
