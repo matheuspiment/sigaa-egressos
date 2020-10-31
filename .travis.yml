@@ -1,4 +1,6 @@
 language: node_js
+os: linux
+dist: xenial
 cache:
   directories:
     - ~/.yarn
@@ -14,7 +16,7 @@ addons:
     token:
       secure: $SONAR_TOKEN
 jdk:
-  - oraclejdk8
+  - oraclejdk11
 script:
   - yarn cover
   - yarn check-coverage
