@@ -1,6 +1,6 @@
 # SIGAA-EGRESSOS
 
-[![travis build](https://img.shields.io/travis/matheuspiment/sigaa-egressos.svg)](https://travis-ci.org/matheuspiment/sigaa-egressos)
+![github actions build](https://img.shields.io/github/workflow/status/matheuspiment/sigaa-egressos/Build)
 [![quality gate](https://sonarcloud.io/api/project_badges/measure?project=com.github.matheuspiment%3Asigaa-egressos&metric=alert_status)](https://sonarcloud.io/dashboard/index/com.github.matheuspiment:sigaa-egressos)
 [![codecov coverage](https://img.shields.io/codecov/c/github/matheuspiment/sigaa-egressos.svg)](https://codecov.io/gh/matheuspiment/sigaa-egressos)
 [![version](https://img.shields.io/npm/v/sigaa-egressos.svg)](https://www.npmjs.com/package/sigaa-egressos)
