@@ -6,10 +6,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         # Disabling shallow clone is recommended for improving relevancy of reporting
         fetch-depth: 0
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+        cache: 'yarn'
     - name: Install dependencies
       run: yarn install
     - name: Build
@@ -18,7 +22,7 @@ jobs:
         yarn check-coverage
         yarn build
     - name: Report coverage to Codecov
-      uses: codecov/codecov-action@v1
+      uses: codecov/codecov-action@v3
       with:
         directory: coverage
         fail_ci_if_error: true
