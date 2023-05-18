@@ -1,6 +1,6 @@
 # SIGAA-EGRESSOS
 
-![github actions build](https://img.shields.io/github/workflow/status/matheuspiment/sigaa-egressos/Build)
+[![build](https://github.com/matheuspiment/sigaa-egressos/actions/workflows/build.yml/badge.svg)](https://github.com/matheuspiment/sigaa-egressos/actions/workflows/build.yml)
 [![quality gate status](https://sonarcloud.io/api/project_badges/measure?project=matheuspiment_sigaa-egressos&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=matheuspiment_sigaa-egressos)
 [![codecov coverage](https://img.shields.io/codecov/c/github/matheuspiment/sigaa-egressos.svg)](https://codecov.io/gh/matheuspiment/sigaa-egressos)
 [![version](https://img.shields.io/npm/v/sigaa-egressos.svg)](https://www.npmjs.com/package/sigaa-egressos)
