@@ -5,6 +5,27 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [16, 18]
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        # Disabling shallow clone is recommended for improving relevancy of reporting
+        fetch-depth: 0
+    - uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node }}
+        cache: 'yarn'
+    - name: Install dependencies
+      run: yarn install
+    - name: Build
+      run: |
+        yarn build
+
+  coverage:
+    needs: build
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
       with:
@@ -16,11 +37,10 @@ jobs:
         cache: 'yarn'
     - name: Install dependencies
       run: yarn install
-    - name: Build
+    - name: Coverage
       run: |
         yarn cover
         yarn check-coverage
-        yarn build
     - name: Report coverage to Codecov
       uses: codecov/codecov-action@v3
       with:
