@@ -50,6 +50,9 @@
     "rimraf": "^2.6.2",
     "semantic-release": "^19.0.3"
   },
+  "engines": {
+    "node": ">=16 <=18"
+  },
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
